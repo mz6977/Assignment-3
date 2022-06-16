@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+{
+int car=10,bus=20,bi=5,noofhours,fine=0;
+char n;
+printf("Please enter vehicle details c-Car b-Bus and B-Bicycle");
+scanf("%c",&n);
+printf("Please enter no of hours");
+scanf("%d",&noofhours);
+if(n=='c')
+{
+fine=car*noofhours;
+}
+else if(n=='b')
+{
+fine=bus*noofhours;
+}
+else if(n=='B')
+{
+fine=bi*noofhours;
+}
+printf("%d",fine);
+}
